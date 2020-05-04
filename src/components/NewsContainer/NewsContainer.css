@@ -1,0 +1,7 @@
+.news-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 5%;
+    padding: 5%;
+
+}
