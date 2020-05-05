@@ -1,8 +1,22 @@
 article {
-    border: 1px solid yellow;
     background-color: #FFF;
+    padding: 2%;
+    border-radius: 10px;
+    /* max-height: 100%; */
+    /* -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75); */
 }
 
 img {
     width: 40%;
+    margin: 2%;
+}
+
+article p {
+    /* margin: 1%; */
+}
+
+a {
+    /* padding-top: 5px; */
 }

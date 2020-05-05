@@ -23,7 +23,7 @@ class Menu extends React.Component {
     render() {
         return (
             <nav>
-                <h1>What's New</h1>
+                {/* <h1>What's New</h1> */}
 
                 <button 
                 onClick={event => this.filterNewsType(event)} 

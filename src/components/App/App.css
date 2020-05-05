@@ -10,7 +10,7 @@
   grid-template-columns: repeat(5, 1fr) ;
   /* flex-wrap: wrap; */
   background: #141527;
-  height: 200vh;
+  height: 110vh;
   text-align: center;
   width: 100%;
 }

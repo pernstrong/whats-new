@@ -27,6 +27,7 @@ class SearchForm extends React.Component {
     render = () => {
         return(
             <section className='search-form'>
+                <h1>What's New</h1>
                 <input
                     type='text'
                     name='searchText'
