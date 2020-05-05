@@ -18,9 +18,6 @@ class SearchForm extends React.Component {
         this.clearInputs()
     }
 
-  
-
-
     clearInputs = () => {
         this.setState({searchText: ''})
     }
@@ -35,11 +32,11 @@ class SearchForm extends React.Component {
                     onChange={event => this.handleChange(event)} 
                     placeholder='search articles'
                 />
-
                 <button onClick={this.handleClick}>SEARCH</button>
                 <button onClick={this.props.refresh}>CLEAR</button>
             </section>
         )
     }
 }
+
 export default SearchForm;
