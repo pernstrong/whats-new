@@ -3,12 +3,17 @@ import './NewsContainer.css'
 import NewsArticle from '../NewsArticle/NewsArticle'
 
 const NewsContainer = (props) => {
-    const localArticles = props.local.map(article => {
+    console.log(props.articles)
+
+    console.log(props.selected)
+    const localArticles = props.selected.map(article => {
         return(
-            <NewsArticle key={article.id} headline={article.headline} img={article.img} description={article.description} url={article.url}
+            <NewsArticle key={article.headline} headline={article.headline} img={article.img} description={article.description} url={article.url}
             />
         )
     })
+
+    
     return(
         <section className='news-container'>
             {localArticles}

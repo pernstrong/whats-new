@@ -10,6 +10,7 @@ class Menu extends React.Component {
         }
     }
     filterNewsType = (event) => {
+        
         this.setState({selected: event.target.name})
         this.handleChange(event.target.name)
     }
@@ -23,11 +24,7 @@ class Menu extends React.Component {
         return (
             <nav>
                 <h1>What's New</h1>
-                {/* <h2>Local News</h2>
-                <h2>Technology</h2>
-                <h2>Entertainment</h2>
-                <h2>Science</h2>
-                <h2>Health</h2> */}
+                
                 <button 
                 onClick={event => this.filterNewsType(event)} 
                 name='local'>
@@ -39,7 +36,6 @@ class Menu extends React.Component {
                 >Technology</button>
 
                 <button 
-                name='entertainment'
                 name='entertainment'
                 onClick={event => this.filterNewsType(event)}
                 >Entertainment</button>
