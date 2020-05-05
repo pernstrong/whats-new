@@ -8,15 +8,20 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      local
+      local,
+      selected: ''
     }
   }
 
+  filterNewsType = (newsType) => {
+    this.setState({selected: newsType})
+    console.log(this.state.selected)
+
+  }
   render () {
-    console.log(this.state.local)
     return (
       <div className="app">
-        <Menu /> 
+        <Menu selectNewsType={this.filterNewsType}/> 
         <NewsContainer local={this.state.local} />
       </div>
     );

@@ -7,9 +7,20 @@ nav {
 h1 {
     color: #fff;
     padding-bottom: 50%;
+    font-size: 4vh;
 }
 
-h2 {
+button {
     color: #fff;
     margin: 15% 0 0 5%;
+    background-color: gray;
+    font-size: 3vh;
+    width: 80%;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    color: gray;
+    background-color: #fff;
 }
