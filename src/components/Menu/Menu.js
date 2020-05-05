@@ -24,14 +24,14 @@ class Menu extends React.Component {
         return (
             <nav>
                 <h1>What's New</h1>
-                
+
                 <button 
                 onClick={event => this.filterNewsType(event)} 
                 name='local'>
                 Local News</button>
 
                 <button 
-                name='tech'
+                name='technology'
                 onClick={event => this.filterNewsType(event)}
                 >Technology</button>
 
@@ -49,6 +49,11 @@ class Menu extends React.Component {
                 name='health'
                 onClick={event => this.filterNewsType(event)}
                 >Health</button>
+
+                {/* <button 
+                name='all'
+                onClick={event => this.filterNewsType(event)}
+                >All News</button> */}
 
             </nav>
         )

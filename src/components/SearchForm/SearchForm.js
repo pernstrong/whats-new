@@ -11,11 +11,13 @@ class SearchForm extends React.Component {
 
     handleChange = (event) => {
         this.setState({searchText: event.target.value})
+        // this.props.submitSearch(this.state.searchText.toLowerCase())
+
     }
 
     handleClick = () => {
-        this.props.submitSearch(this.state.searchText)
-        this.clearInputs()
+        this.props.submitSearch(this.state.searchText.toLowerCase())
+        // this.clearInputs()
     }
 
     clearInputs = () => {
@@ -31,6 +33,7 @@ class SearchForm extends React.Component {
                     value={this.state.searchText}
                     onChange={event => this.handleChange(event)} 
                     placeholder='search articles'
+                    // onKeyDown={this.handleClick}
                 />
                 <button onClick={this.handleClick}>SEARCH</button>
                 <button onClick={this.props.refresh}>CLEAR</button>

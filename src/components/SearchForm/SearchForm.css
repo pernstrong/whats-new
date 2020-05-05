@@ -1,4 +1,23 @@
-.search-form input {
+
+.search-form {
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+    /* flex: 1 100%; */
+    grid-column: 1 / 6;
+    height: 100%;
+    border: 1px solid orange;
+    /* width: 85%; */
+    /* float: right; */
+    background-color: lightblue;
+    /* display: inline-block; */
+}
+
+.search-form input,
+.search-form button {
     height: 3vh;
     font-size: 3vh;
+    display: inline-block;
+    margin: 3%;
+    width: 25%;
 }
+
