@@ -30,7 +30,8 @@ const local = [
   {
     id: 5,
     headline: 'Motorcyclist killed in crash near Capitol Hill in Denver',
-    img: 'https://localtvkdvr.files.wordpress.com/2019/09/fatal-motorcycle.jpeg?quality=85&strip=all&w=800&h=450&crop=1',
+    // img: 'https://localtvkdvr.files.wordpress.com/2019/09/fatal-motorcycle.jpeg?quality=85&strip=all&w=800&h=450&crop=1',
+    img: 'https://i.pinimg.com/originals/2b/63/40/2b634063476ce057426b75a199eeab3a.jpg',
     description: 'A motorcyclist was killed in a crash near East 17th Avenue and Park Avenue in Denver early Friday morning.',
     url: 'https://kdvr.com/2019/09/27/motorcyclist-killed-in-crash-near-capitol-hill-in-denver/'
   },

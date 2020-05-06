@@ -1,0 +1,23 @@
+.news-container {
+    border-top: 3px solid #fff;
+    border-left: 3px solid #fff;
+    grid-column: 2 / 6;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 5%;
+    padding: 5%;
+    overflow: scroll;
+}
+
+.news-container button {
+    border-radius: 5px;
+    background-color: #E27542;
+    border: 1px solid #fff;
+    color: #fff;
+    font-size: 3vh;
+    display: inline-block;
+    margin: 5%;
+    padding: 2%;
+    cursor: pointer; 
+}
+

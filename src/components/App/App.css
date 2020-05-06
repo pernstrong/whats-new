@@ -5,9 +5,10 @@
 }
 
 .app {
-  display: flex;
-  background: #141527;
-  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr) ;
+  background: #AAD831;
+  height: 110vh;
   text-align: center;
   width: 100%;
 }

@@ -1,0 +1,35 @@
+
+.search-form {
+    grid-column: 1 / 6;
+    height: %;
+    background-color: #73B7E9;
+}
+
+h1 {
+    display: inline-block;
+    padding: 0;
+    font-size: 5vh;
+    margin: 1% 20% 1% 1%;
+}
+
+
+.search-form input {
+    font-size: 3vh;
+    display: inline-block;
+    margin: 1%;
+    width: 25%;
+    padding: .5%;
+}
+
+.search-form button {
+    border-radius: 5px;
+    background-color: #E27542;
+    border: 1px solid #fff;
+    color: #fff;
+    font-size: 3vh;
+    display: inline-block;
+    margin: 1%;
+    width: 15%;
+    padding: .5%;
+    cursor: pointer;
+}
