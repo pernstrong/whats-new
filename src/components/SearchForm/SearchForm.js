@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types'
 import './SearchForm.css';
 
 class SearchForm extends React.Component {
@@ -11,13 +12,12 @@ class SearchForm extends React.Component {
 
     handleChange = (event) => {
         this.setState({searchText: event.target.value})
-        // this.props.submitSearch(this.state.searchText.toLowerCase())
 
     }
 
     handleClick = () => {
         this.props.submitSearch(this.state.searchText.toLowerCase())
-        // this.clearInputs()
+        this.clearInputs()
     }
 
     clearInputs = () => {
@@ -34,8 +34,8 @@ class SearchForm extends React.Component {
                     value={this.state.searchText}
                     onChange={event => this.handleChange(event)} 
                     placeholder='search articles'
-                    // onKeyDown={this.handleClick}
                 />
+                
                 <button onClick={this.handleClick}>SEARCH</button>
                 <button onClick={this.props.refresh}>CLEAR</button>
             </section>
@@ -44,3 +44,8 @@ class SearchForm extends React.Component {
 }
 
 export default SearchForm;
+
+SearchForm.propTypes = {
+    submitSearch: PropTypes.func,
+    refresh: PropTypes.func
+}

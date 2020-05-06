@@ -1,24 +1,38 @@
 import React from 'react';
+import PropTypes from 'prop-types'
 import './NewsContainer.css'
 import NewsArticle from '../NewsArticle/NewsArticle'
 
 const NewsContainer = (props) => {
-    console.log(props.articles)
 
-    console.log(props.selected)
     const localArticles = props.selected.map(article => {
         return(
-            <NewsArticle key={article.headline} headline={article.headline} img={article.img} description={article.description} url={article.url}
+            <NewsArticle 
+            key={article.headline} 
+            {...article}
             />
         )
     })
 
-    
+    const noArticlesMessage = () => {
+       return !props.selected.length && (
+            <div>
+                <h2>No articles match your search...</h2>
+                <button onClick={props.refresh}>Back to All Articles</button>
+            </div>
+        )
+    } 
+
     return(
         <section className='news-container'>
             {localArticles}
+            {noArticlesMessage()}
         </section>
     )
 }
 
 export default NewsContainer;
+
+NewsContainer.propTypes = {
+    selected: PropTypes.array
+}

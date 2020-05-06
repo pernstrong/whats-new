@@ -2,10 +2,10 @@ article {
     background-color: #FFF;
     padding: 2%;
     border-radius: 10px;
-    /* max-height: 100%; */
-    /* -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
--moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75); */
+    max-height: 100%; 
+    -webkit-box-shadow: 6px 6px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 6px 6px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 6px 6px 5px 0px rgba(0,0,0,0.75);
 }
 
 img {
@@ -13,10 +13,17 @@ img {
     margin: 2%;
 }
 
-article p {
-    /* margin: 1%; */
+article h3 {
+    padding: 2%;
+    border-bottom: 1px solid black;
+}
+
+p {
+    padding: 3%;
 }
 
 a {
-    /* padding-top: 5px; */
+    padding: %;
+    font-weight: bold;
+    color: #E27542;
 }

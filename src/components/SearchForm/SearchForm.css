@@ -1,9 +1,8 @@
 
 .search-form {
     grid-column: 1 / 6;
-    /* grid-row: 1; */
     height: %;
-    background-color: lightblue;
+    background-color: #73B7E9;
 }
 
 h1 {
@@ -15,7 +14,6 @@ h1 {
 
 
 .search-form input {
-    /* height: 3vh; */
     font-size: 3vh;
     display: inline-block;
     margin: 1%;
@@ -25,11 +23,13 @@ h1 {
 
 .search-form button {
     border-radius: 5px;
-    background-color: #141527;
-    /* height: 3vh; */
+    background-color: #E27542;
+    border: 1px solid #fff;
+    color: #fff;
     font-size: 3vh;
     display: inline-block;
     margin: 1%;
     width: 15%;
     padding: .5%;
+    cursor: pointer;
 }
