@@ -6,10 +6,10 @@ class Menu extends React.Component {
     constructor(props) {
         super(props)
         this.state = {
-            selected: ''
+            selected: '',
         }
     }
-
+    
     filterNewsType = (event) => {
         this.setState({selected: event.target.name})
         this.handleChange(event.target.name)
