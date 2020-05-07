@@ -20,7 +20,6 @@ class Menu extends React.Component {
     }
 
     styleButton = (newsType) => {
-        console.log(newsType, this.state.selected)
         return this.state.selected === newsType ? 'selected' : 'unselected' 
     }
 
@@ -29,38 +28,33 @@ class Menu extends React.Component {
             <nav>
                 <button 
                 className={this.styleButton('local')}
-                onClick={event => this.filterNewsType(event) } 
+                onClick={this.filterNewsType} 
                 name='local'>
                 Local News</button>
 
                 <button 
                 className={this.styleButton('technology')}
                 name='technology'
-                onClick={event => this.filterNewsType(event)}
+                onClick={this.filterNewsType}
                 >Technology</button>
 
                 <button 
                 className={this.styleButton('entertainment')}
                 name='entertainment'
-                onClick={event => this.filterNewsType(event)}
+                onClick={this.filterNewsType}
                 >Entertainment</button>
 
                 <button 
                 className={this.styleButton('science')}
                 name='science'
-                onClick={event => this.filterNewsType(event)}
+                onClick={this.filterNewsType}
                 >Science</button>
 
                 <button 
                 className={this.styleButton('health')}
                 name='health'
-                onClick={event => this.filterNewsType(event)}
+                onClick={this.filterNewsType}
                 >Health</button>
-
-                {/* <button 
-                name='all'
-                onClick={event => this.filterNewsType(event)}
-                >All News</button> */}
 
             </nav>
         )

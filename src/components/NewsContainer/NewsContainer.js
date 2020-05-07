@@ -5,7 +5,7 @@ import NewsArticle from '../NewsArticle/NewsArticle'
 
 const NewsContainer = (props) => {
 
-    const localArticles = props.selected.map(article => {
+    const articles = props.selected.map(article => {
         return(
             <NewsArticle 
             key={article.headline} 
@@ -25,7 +25,7 @@ const NewsContainer = (props) => {
 
     return(
         <section className='news-container'>
-            {localArticles}
+            {articles}
             {noArticlesMessage()}
         </section>
     )

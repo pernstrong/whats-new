@@ -1,23 +1,22 @@
 .news-container {
-    border-top: 3px solid #fff;
-    border-left: 3px solid #fff;
-    grid-column: 2 / 6;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
     grid-gap: 5%;
-    padding: 5%;
+    border-left: 3px solid #fff;
+    border-top: 3px solid #fff;
+    display: grid;
+    grid-column: 2 / 6;
+    grid-template-columns: repeat(2, 1fr);
     overflow: scroll;
+    padding: 5%;
 }
 
 .news-container button {
-    border-radius: 5px;
     background-color: #E27542;
     border: 1px solid #fff;
+    border-radius: 5px;
     color: #fff;
-    font-size: 3vh;
+    cursor: pointer;
     display: inline-block;
+    font-size: 3vh;
     margin: 5%;
     padding: 2%;
-    cursor: pointer; 
 }
-

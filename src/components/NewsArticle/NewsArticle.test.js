@@ -1,7 +1,9 @@
 import React from 'react'
 import NewsArticle from './NewsArticle'
 import { render } from '@testing-library/react';
-import '@testing-library/jest-dom';
+import '@testing-library/jest-dom/extend-expect';
+
+
 
 describe('NewsArticle', () => {
     it('displays correct info', () => {
@@ -12,11 +14,8 @@ describe('NewsArticle', () => {
                                         description="A child saved a murderer...was it an accident?!?"
                                         url="www.birdsarentreal.com"
                                         />);
-            
-        expect(getByText("Murderer Saves Child")).toBeInTheDocument();
-        // expect(getByText("Child Saves Murderer")).toBeInTheDocument();
-        // expect(getByText("http://foxnews.com/picture")).toBeInTheDocument();
-        // expect(getByText("A child saved a murderer...was it an accident?!?")).toBeInTheDocument();
-        // expect(getByText("www.birdsarentreal.com")).toBeInTheDocument();
+
+        expect(getByText("Child Saves Murderer")).toBeInTheDocument();
+        expect(getByText("A child saved a murderer...was it an accident?!?")).toBeInTheDocument();
     })
 })
