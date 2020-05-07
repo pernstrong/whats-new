@@ -7,16 +7,14 @@ import '@testing-library/jest-dom/extend-expect';
 describe('NewsContainer', () => {
 
     it('should display articles', () => {
-        const { getByText } = render(<NewsContainer selected={[{id: 3, headline: 'wow', description: 'nah uh', url: 'www.birdsarentreal.com'}]}
-        />)
+        const { getByText } = render(<NewsContainer selected={[{id: 3, headline: 'wow', description: 'nah uh', url: 'www.birdsarentreal.com'}]} />)
 
         expect(getByText('wow')).toBeInTheDocument()
 
     })
 
     it('should display a message if no articles match a search', () => {
-        const { getByText } = render(<NewsContainer selected={[]}
-        />)
+        const { getByText } = render(<NewsContainer selected={[]} />)
         
         expect(getByText('No articles match your search...')).toBeInTheDocument()
     })

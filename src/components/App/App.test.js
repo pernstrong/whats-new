@@ -8,7 +8,6 @@ describe('App', () => {
         const { getByText, getByPlaceholderText } = render(<App />)
 
         fireEvent.change(getByPlaceholderText('search articles'), {target: {value: 'the who'}})
-
         fireEvent.click(getByText('SEARCH'))
 
         expect(getByText('The Who postpones Denver Concert at the Pepsi Center')).toBeInTheDocument()

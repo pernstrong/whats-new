@@ -1,7 +1,6 @@
 import React from 'react'
 import Menu from './Menu'
 import { render, fireEvent } from '@testing-library/react';
-// import '@testing-library/jest-dom';
 import '@testing-library/jest-dom/extend-expect';
 
 describe('Menu', () => {

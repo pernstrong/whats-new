@@ -5,14 +5,12 @@ import '@testing-library/jest-dom/extend-expect';
 
 describe('NewsArticle', () => {
     it('displays a header', () => {
-
         const { getByText } = render(<SearchForm />)
 
         expect(getByText('What\'s New')).toBeInTheDocument()
     })
 
     it('has a placeholder in the search input', () => {
-
         const { getByPlaceholderText } = render(<SearchForm />)
 
         expect(getByPlaceholderText('search articles')).toBeInTheDocument()
