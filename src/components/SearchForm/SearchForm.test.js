@@ -19,7 +19,7 @@ describe('NewsArticle', () => {
     })
 
     it('should display the correct search value as the user searchs', () => {
-        const { getByPlaceholderText, getByText } = render(<SearchForm />)
+        const { getByPlaceholderText } = render(<SearchForm />)
 
         fireEvent.change(getByPlaceholderText('search articles'), {target: {value: 'fake news'}})
 

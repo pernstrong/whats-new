@@ -20,6 +20,7 @@ describe('NewsContainer', () => {
         
         expect(getByText('No articles match your search...')).toBeInTheDocument()
     })
+    
      it('should call the Apps reloadAllArticles method when there are no articles matching the search and the user clicks the Back to All Articles button', () => {
         const mockRefresh = jest.fn()
         const { getByText } = render(<NewsContainer refresh={mockRefresh} selected={[]}/>)
