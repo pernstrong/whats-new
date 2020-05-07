@@ -4,7 +4,6 @@ import './NewsArticle.css';
 
 const NewsArticle = ({id, headline, img, description, url}) => {
     return(
-        // do we need the data-id attribute???
         <article data-id={id}>
             <h3>{headline}</h3>
             <img src={img} alt='news article'/>

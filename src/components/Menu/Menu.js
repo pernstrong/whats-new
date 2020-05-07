@@ -6,10 +6,10 @@ class Menu extends React.Component {
     constructor(props) {
         super(props)
         this.state = {
-            selected: ''
+            selected: '',
         }
     }
-
+    
     filterNewsType = (event) => {
         this.setState({selected: event.target.name})
         this.handleChange(event.target.name)
@@ -20,48 +20,26 @@ class Menu extends React.Component {
     }
 
     styleButton = (newsType) => {
-        console.log(newsType, this.state.selected)
         return this.state.selected === newsType ? 'selected' : 'unselected' 
+    }
+
+    // is this cool? originally just had 5 seperate buttons in the render return but this seems cleaner??
+    createButton = (name, displayName) => {
+        return (<button 
+            className={this.styleButton(name)}
+            onClick={this.filterNewsType} 
+            name={name}>
+            {displayName}</button>)
     }
 
     render() {
         return (
             <nav>
-                <button 
-                className={this.styleButton('local')}
-                onClick={event => this.filterNewsType(event) } 
-                name='local'>
-                Local News</button>
-
-                <button 
-                className={this.styleButton('technology')}
-                name='technology'
-                onClick={event => this.filterNewsType(event)}
-                >Technology</button>
-
-                <button 
-                className={this.styleButton('entertainment')}
-                name='entertainment'
-                onClick={event => this.filterNewsType(event)}
-                >Entertainment</button>
-
-                <button 
-                className={this.styleButton('science')}
-                name='science'
-                onClick={event => this.filterNewsType(event)}
-                >Science</button>
-
-                <button 
-                className={this.styleButton('health')}
-                name='health'
-                onClick={event => this.filterNewsType(event)}
-                >Health</button>
-
-                {/* <button 
-                name='all'
-                onClick={event => this.filterNewsType(event)}
-                >All News</button> */}
-
+                {this.createButton('local', 'Local News')}
+                {this.createButton('technology', 'Technology')}
+                {this.createButton('entertainment', 'Entertainment')}
+                {this.createButton('science', 'Science')}
+                {this.createButton('health', 'Health')}
             </nav>
         )
     }

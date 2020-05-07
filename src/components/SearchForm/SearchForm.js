@@ -12,7 +12,6 @@ class SearchForm extends React.Component {
 
     handleChange = (event) => {
         this.setState({searchText: event.target.value})
-
     }
 
     handleClick = () => {
@@ -32,7 +31,7 @@ class SearchForm extends React.Component {
                     type='text'
                     name='searchText'
                     value={this.state.searchText}
-                    onChange={event => this.handleChange(event)} 
+                    onChange={this.handleChange}
                     placeholder='search articles'
                 />
                 
